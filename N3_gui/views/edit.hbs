@@ -1,0 +1,27 @@
+<div class="card">
+    <h5 class="card-header">{{title}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">Dados da Inscrição</h5>
+        <form action="/edition/{{ id }}" method="post">
+            <div class="mb-3">
+                <label for="age" class="form-label">Idade:</label>
+                <input type="text" class="form-control" id="age" name="age" value="{{ age }}">
+            </div>
+            <div class="mb-3">
+                <label for="sex" class="form-label">Sexo:</label>
+                <input type="text" class="form-control" id="sex" name="sex" value="{{ sex }}">
+            </div>
+            <div class="mb-3">
+                <label for="cp" class="form-label">CP:</label>
+                <input type="text" class="form-control" id="cp" name="cp" value="{{ cp }}">
+            </div>
+            <div class="mb-3">
+                <label for="chol" class="form-label">Colesterol:</label>
+                <input type="text" class="form-control" id="chol" name="chol" value="{{ chol }}">
+            </div>
+            <a href="/list" class="btn btn-primary">Cancelar</a>
+            <button type="submit" class="btn btn-success">Salvar</button>
+    </div>
+    </form>
+</div>
+</div>
